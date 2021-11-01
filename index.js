@@ -49,7 +49,7 @@ const start = () => {
       return startGame(chatId);
     }
 
-    if (data === chats[chatId]) {
+    if (data == chats[chatId]) {
       return bot.sendMessage(chatId,`Класс, ты гений. Это цифра ${chats[chatId]}`, againOptions);
     } else {
       return bot.sendMessage(chatId,`Чел , ты не угадал. Это цифра ${chats[chatId]}`, againOptions);
